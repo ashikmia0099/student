@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% load static %}
+{% block blockname %}
+
+
+
+
+
+<div class="container" style="height: 1000px; padding-top:100px">
+    <h1>How to make a video</h1>
+    <div class="row">
+        <div class="col">
+            <div class="feature-img">
+                <img src="{% static 'Blockchain.jpg' %}" alt="">
+                <img src="{% static 'play.png' %}" class="play-btn" alt=""
+                onclick="playVideo('Natureoos.mp4')">
+            </div>
+        </div>
+        <div class="col">
+            <div class="small-img-row">
+                <div class="small-img">
+                    <img src="{% static 'bkash.png' %}" alt="">
+                    <img src="{% static 'play.png' %}" class="play-btn" alt="">
+                </div>
+                <p>how to add multiple videos in website</p>
+            </div>
+            <div class="small-img-row">
+                <div class="small-img">
+                    <img src="{% static 'bkash.png' %}" alt="">
+                    <img src="{% static 'play.png' %}" class="play-btn" alt="">
+                </div>
+                <p>how to add multiple videos in website</p>
+            </div>
+            <div class="small-img-row">
+                <div class="small-img">
+                    <img src="{% static 'bkash.png' %}" alt="">
+                    <img src="{% static 'play.png' %}" class="play-btn" alt="">
+                </div>
+                <p>how to add multiple videos in website</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- video section -->
+
+<div class="video-player" id="videoPlayer" >
+    <video width="100%" controls autoplay id="myVideo">
+        <source class="videopart" src="{% static 'Natureoos.mp4' %}" type="video/mp4" />
+      </video>
+      <img src="{% static 'close2.png' %}" class="close-btn" alt="" onclick="stopVideo()">
+</div>
+
+
+
+<!-- js site -->
+
+<script>
+
+    var videoPlayer = document.getElementById("videoPlayer")
+    var myVideo = document.getElementById("myVideo")
+
+    function stopVideo(){
+        videoPlayer.style.display = 'none';
+    }
+
+    function playVideo(file){
+        myVideo.src = file;
+        videoPlayer.style.display = 'block';
+    }
+
+</script>
+
+
+{% endblock blockname %}

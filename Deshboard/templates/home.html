@@ -1,0 +1,1012 @@
+{% extends "base.html" %} {% load static %} {% block blockname %}
+
+
+<style>
+  .fullbanner{
+
+    padding-top: 100px;
+    padding-bottom: 200px;
+
+}
+
+
+.banner1{
+    margin-top: 100px;
+   
+    height: 500px;
+    width: 80%;
+    margin: 3px auto;
+}
+
+.eLarning{
+    padding-top: 30px;
+    font: 50px;
+    font-weight: 800;
+}
+
+
+.buttonclass{
+    padding-top: 100px;
+    justify-content: center;
+    padding-left: 150px;
+}
+
+
+.button1{
+    
+    height: 70px;
+    width: 200px;
+    font-weight: 400;
+    justify-content: center;
+    margin: none;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(104, 103, 103);
+    font-size: 25px;
+    font-weight: 200;
+    color: aliceblue;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+.button2{
+    
+  height: 70px;
+  width: 200px;
+  font-weight: 400;
+  justify-content: center;
+  margin: none;
+  border: none;
+  border-radius: 15px;
+  background-color: rgb(104, 103, 103);
+  font-size: 25px;
+  font-weight: 200;
+  color: aliceblue;
+  text-decoration: none;
+  text-align: center;
+}
+
+.videopart{
+  border-radius: 25px;
+}
+
+
+/* right part */
+
+.bannervideo{
+    text-align: center;
+    padding-top: 70px;
+}
+
+
+  
+</style>
+
+
+
+<!-- 2. banner -->
+<div class="fullbanner">
+  <div class="banner1 container d-flex">
+    <div class="col-6">
+      <h1 class="text-center eLarning">Become an IT Pro & Rule the Digital World</h1>
+      <h5 class="text-center">
+        With a vision to turn manpower into assets, Creative IT Institute is
+        ready to enhance your learning experience with skilled mentors and
+        updated curriculum. Pick your desired course from more than 30 trendy
+        options.
+      </h5>
+      <div class="buttonclass">
+        <a class="button1 p-2 abuttontype"  type="button" href='{% url "all_course_page" %}'>Browser Course</a>
+        <a class="button1 p-2 abuttontype"  type="button" href='{% url "seminer_page" %}'>Free Seminer</a>
+      </div>
+    </div>
+    <div class="col-6 bannervideo">
+      <video class="width=" 330 height="350" controls muted>
+        <source class="videopart" src="{% static 'Natureoos.mp4' %}" type="video/mp4" />
+      </video>
+    </div>
+  </div>
+</div>
+
+<!--3. cattegory section -->
+
+<div
+  id="carouselExampleControls"
+  class="carousel carousel-dark slide"
+  data-bs-ride="carousel"
+>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="card-wrapper container-sm d-flex justify-content-around">
+        <div class="card" style="width: 18rem" >
+          <img
+            src="https://source.unsplash.com/collection/190727/1600x900"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://source.unsplash.com/collection/190727/1600x900"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://source.unsplash.com/collection/190727/1600x900"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="card-wrapper container-sm d-flex justify-content-around">
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://source.unsplash.com/collection/190727/1600x900"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://source.unsplash.com/collection/190727/1600x900"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://source.unsplash.com/collection/190727/1600x900"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="card-wrapper container-sm d-flex justify-content-around">
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://source.unsplash.com/collection/190727/1600x900"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://source.unsplash.com/collection/190727/1600x900"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://source.unsplash.com/collection/190727/1600x900"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carouselExampleControls"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#carouselExampleControls"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<!-- 4. all category  -->
+
+<div class="allcourse">
+  <div class="allcouresunder">
+    <div class="text-center pt-4 text-white">
+      <h1>Our Famous Coures</h1>
+      <h5 class="loremtext">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum,
+        voluptatibus laborum magnam harum voluptate nemo similique minima,
+        laudantium totam enim iure necessitatibus, corrupti rem sed beatae
+        provident ipsam ipsum omnis nam fugit! Eum asperiores ipsum minima,
+        molestiae voluptatum atque ducimus officia quos saepe odit earum
+        temporibus voluptate consequuntur excepturi. Repudiandae.
+      </h5>
+    </div>
+
+    <div class="allcoursebanner">
+      <div class="d-flex gap-5 justify-content-center cattegoytype">
+        <h3>All course</h3>
+        <h3>Graphic</h3>
+        <h3>Web and Softwere</h3>
+        <h3>3D anamition</h3>
+        <h3>Cloud Computing</h3>
+        <h3>Data Science</h3>
+        <h3>Cybersecurity</h3>
+        <h3>Robotics</h3>
+        <h3>Video Editing</h3>
+      </div>
+      <div
+        id="carouselExampleControls"
+        class="carousel carousel-dark slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div
+              class="card-wrapper container-sm d-flex justify-content-around"
+            >
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://source.unsplash.com/collection/190727/1600x900"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://source.unsplash.com/collection/190727/1600x900"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://source.unsplash.com/collection/190727/1600x900"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div
+              class="card-wrapper container-sm d-flex justify-content-around"
+            >
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://source.unsplash.com/collection/190727/1600x900"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://source.unsplash.com/collection/190727/1600x900"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://source.unsplash.com/collection/190727/1600x900"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div
+              class="card-wrapper container-sm d-flex justify-content-around"
+            >
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://source.unsplash.com/collection/190727/1600x900"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://source.unsplash.com/collection/190727/1600x900"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://source.unsplash.com/collection/190727/1600x900"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 5. our special service -->
+
+<div class="pt-5">
+  <div class="ourservice" style="height: 800px">
+    <div style="padding: 50px">
+      <h1>Our Special Service</h1>
+      <h6>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos
+        iste libero et obcaecati suscipit maiores modi fugit in, ipsum quos?
+      </h6>
+    </div>
+    <div class="d-flex" style="">
+      <div class="col-6 justify-content-center">
+        <div class="p-5">
+          <ul class="list-group pb-2 pt-4">
+            <li
+              class="list-group-item"
+              style="width: 500px"
+              aria-current="true"
+            >
+              <div>
+                <h3 class="px-3">Life Time Support</h3>
+              </div>
+            </li>
+          </ul>
+          <ul class="list-group pb-2 pt-4">
+            <li
+              class="list-group-item"
+              style="width: 500px"
+              aria-current="true"
+            >
+              <div>
+                <h3 class="px-3">Student Maintain</h3>
+              </div>
+            </li>
+          </ul>
+          <ul class="list-group pb-2 pt-4">
+            <li
+              class="list-group-item"
+              style="width: 500px"
+              aria-current="true"
+            >
+              <div>
+                <h3 class="px-3">Extra Class</h3>
+              </div>
+            </li>
+          </ul>
+          <ul class="list-group pb-2 pt-4">
+            <li
+              class="list-group-item"
+              style="width: 500px"
+              aria-current="true"
+            >
+              <div>
+                <h3 class="px-3">live recode class</h3>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-6" style="padding-top: 50px">
+        <video class="width=" 350 height="370" controls muted>
+          <source src="{% static 'Natureoos.mp4' %}" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 6. Category wise show  -->
+<!-- first card -->
+<div class="justify-content-center">
+  <h1>Degital Marketing</h1>
+  <div class="d-flex justify-content-center">
+    <div class="p-3">
+      <div class="card" style="height: 500px; width: 450px">
+        <img src="static/Blockchain.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">All Courses</h5>
+          <h2>Degital Markeging</h2>
+          <p class="">14,400 Reviews 18,000 Student</p>
+        </div>
+        <div class="d-flex">
+          <div style="padding-left: 40px; padding-bottom: 50px">
+            <h4>Course Fee</h4>
+            <h4>50000 BDT</h4>
+          </div>
+          <div style="padding-left: 70px; padding-top: px">
+            <a href="#" class="btn btn-primary p-3" style="border-radius: 25px"
+              ><h5>Purches Course</h5></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- second card -->
+    <div class="p-3">
+      <div class="card" style="height: 500px; width: 450px">
+        <img src="static/Blockchain.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">All Courses</h5>
+          <h2>Degital Markeging</h2>
+          <p class="">14,400 Reviews 18,000 Student</p>
+        </div>
+        <div class="d-flex">
+          <div style="padding-left: 40px; padding-bottom: 50px">
+            <h4>Course Fee</h4>
+            <h4>50000 BDT</h4>
+          </div>
+          <div style="padding-left: 70px; padding-top: px">
+            <a href="#" class="btn btn-primary p-3" style="border-radius: 25px"
+              ><h5>Purches Course</h5></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- third card -->
+    <div class="p-3">
+      <div class="card" style="height: 500px; width: 450px">
+        <img src="static/Blockchain.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">All Courses</h5>
+          <h2>Degital Markeging</h2>
+          <p class="">14,400 Reviews 18,000 Student</p>
+        </div>
+        <div class="d-flex">
+          <div style="padding-left: 40px; padding-bottom: 50px">
+            <h4>Course Fee</h4>
+            <h4>50000 BDT</h4>
+          </div>
+          <div style="padding-left: 70px; padding-top: px">
+            <a href="#" class="btn btn-primary p-3" style="border-radius: 25px"
+              ><h5>Purches Course</h5></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- seemore button -->
+  <div>
+    <div class="align-items-center" style="padding-left: 750px">
+      <button type="button" class="btn btn-secondary">See all course</button>
+    </div>
+  </div>
+</div>
+
+<!-- 7. Join Free seminer -->
+
+<div
+  class="joinseminerpart"
+  style="height: 900px; width: 100%; padding-top: 50px"
+>
+  <div class="d-flex bg-secondary" style="height: 800px">
+    <!-- text part  -->
+    <div class="col-6">
+      <div class="text-center" style="padding-top: 100px">
+        <h1>Join Our Free Seminer</h1>
+        <h6 style="padding: 50px">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam cum
+          tempora fugit temporibus, voluptatem necessitatibus reiciendis
+          nesciunt facere accusamus maxime veritatis magni optio
+        </h6>
+      </div>
+      <ul class="list-group pb-2 pt-4">
+        <li
+          class="list-group-item"
+          style="display: -webkit-box; width: 700px"
+          aria-current="true"
+        >
+          <div>
+            <h3 class="px-3">24</h3>
+            <span><h5>March , 24</h5></span>
+          </div>
+          <div class="px-3">
+            <div
+              class="px-3 bg-body-secondary pt-1"
+              style="border-radius: 15px; width: 550px"
+            >
+              <div class="pt-2 d-flex">
+                <div>
+                  <h5 class="">Graphic And Multimedia</h5>
+                  <h6>Online, 3.30 pm</h6>
+                </div>
+                <div style="padding-left: 200px; padding-top: 5px">
+                  <button type="button" class="btn btn-success">Join</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul class="list-group pb-2 pt-4">
+        <li
+          class="list-group-item"
+          style="display: -webkit-box; width: 700px"
+          aria-current="true"
+        >
+          <div>
+            <h3 class="px-3">24</h3>
+            <span><h5>March , 24</h5></span>
+          </div>
+          <div class="px-3">
+            <div
+              class="px-3 bg-body-secondary pt-1"
+              style="border-radius: 15px; width: 550px"
+            >
+              <div class="pt-2 d-flex">
+                <div>
+                  <h5 class="">Graphic And Multimedia</h5>
+                  <h6>Online, 3.30 pm</h6>
+                </div>
+                <div style="padding-left: 200px; padding-top: 5px">
+                  <button type="button" class="btn btn-success">Join</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul class="list-group pb-2 pt-4">
+        <li
+          class="list-group-item"
+          style="display: -webkit-box; width: 700px"
+          aria-current="true"
+        >
+          <div>
+            <h3 class="px-3">24</h3>
+            <span><h5>March , 24</h5></span>
+          </div>
+          <div class="px-3">
+            <div
+              class="px-3 bg-body-secondary pt-1"
+              style="border-radius: 15px; width: 550px"
+            >
+              <div class="pt-2 d-flex">
+                <div>
+                  <h5 class="">Graphic And Multimedia</h5>
+                  <h6>Online, 3.30 pm</h6>
+                </div>
+                <div style="padding-left: 200px; padding-top: 5px">
+                  <button type="button" class="btn btn-success">Join</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="text-center pt-3">
+        <button
+          type="button"
+          class="btn btn-success p-3"
+          style="border-radius: 20px"
+        >
+          <h5>Show Other seminer</h5>
+        </button>
+      </div>
+    </div>
+
+    <!-- image part -->
+    <div class="col-6">
+      <div style="padding-top: 200px; align-items: center; padding-left: 150px">
+        <img
+          style="height: 500px; width: 500px"
+          src="static/doctor.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 8. institute site Banner -->
+
+<div
+  style="height: 600px; padding: 100px; justify-content: center"
+  class="justify-content-center"
+>
+  <div style="height: 500px; background-color: beige" class="d-flex">
+    <div class="col-6" style="padding: 100px; padding-bottom: 100px">
+      <h1>Become A it pro</h1>
+      <h6>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non
+        accusantium, nemo delectus repellat commodi provident unde similique
+        earum! Consectetur sit mollitia rem voluptatibus harum quo nam beatae
+        quod maxime sapiente!
+      </h6>
+    </div>
+    <div class="col-6" style="padding: 100px; padding-bottom: 50px">
+      <img
+        style="height: 350px; width: 350px"
+        src="static/download (1).jpg"
+        alt=""
+      />
+    </div>
+  </div>
+</div>
+
+<div
+  style="height: 600px; padding: 100px; justify-content: center"
+  class="justify-content-center"
+>
+  <div style="height: 500px; background-color: beige" class="d-flex">
+    <div class="col-6" style="padding: 100px; padding-bottom: 100px">
+      <h1>Become A it pro</h1>
+      <h6>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non
+        accusantium, nemo delectus repellat commodi provident unde similique
+        earum! Consectetur sit mollitia rem voluptatibus harum quo nam beatae
+        quod maxime sapiente!
+      </h6>
+    </div>
+    <div class="col-6" style="padding: 100px; padding-bottom: 50px">
+      <img
+        style="height: 350px; width: 350px"
+        src="static/download (1).jpg"
+        alt=""
+      />
+    </div>
+  </div>
+</div>
+
+<!-- 9 Success history video -->
+
+<div class="" style="height: 1400px; padding: 100px; padding-bottom: 50px">
+  <div style="height: 1300px; background-color: rgb(250, 235, 175)">
+    <div>
+      <div style="padding: 50px; text-align: center">
+        <h1>Success Storys</h1>
+        <h5
+          style="padding-top: 50px; padding-left: 150px; padding-right: 150px"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim,
+          pariatur. Odit corporis architecto eligendi sapiente deserunt,
+          quisquam sunt, beatae et enim obcaecati ratione vero ut voluptates
+          porro perspiciatis quo omnis?
+        </h5>
+      </div>
+      <div
+        class="d-flex"
+        style="padding-top: 40px; padding-bottom: 40px; padding-left: 15px"
+      >
+        <div class="col-6" style="height: 400px; margin-right: 5px">
+          <video
+            class="width="
+            100%
+            height="100%"
+            style="border-radius: 40px"
+            controls
+            muted
+          >
+            <source src="{% static 'Natureoos.mp4' %}" type="video/mp4" />
+          </video>
+        </div>
+        <div class="col-6" style="height: 400px; margin-right: 30px">
+          <video
+            class="width="
+            100%
+            height="100%"
+            style="border-radius: 40px"
+            controls
+            muted
+          >
+            <source src="{% static 'Natureoos.mp4' %}" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+      <!-- video second section -->
+      <div class="d-flex" style="padding-left: 15px">
+        <div class="col-6" style="height: 400px; margin-right: 5px">
+          <video
+            class="width="
+            100%
+            height="100%"
+            style="border-radius: 40px"
+            controls
+            muted
+          >
+            <source src="{% static 'Natureoos.mp4' %}" type="video/mp4" />
+          </video>
+        </div>
+        <div class="col-6" style="height: 400px; margin-right: 30px">
+          <video
+            class="width="
+            100%
+            height="100%"
+            style="border-radius: 40px"
+            controls
+            muted
+          >
+            <source src="{% static 'Natureoos.mp4' %}" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+      <!-- seemore button -->
+      <div style="padding-top: 50px; padding-left: 655px" class=" ">
+        <button
+          type="button"
+          class="btn btn-success"
+          style="border-radius: 20px; width: 200px"
+        >
+          <h5>See More</h5>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 10. institute Event picture -->
+
+<div style="padding-top:50px">
+  <div
+    id="carouselExampleControls"
+    class="carousel carousel-dark slide"
+    data-bs-ride="carousel"
+  >
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="card-wrapper container-sm d-flex justify-content-around">
+          <!-- first arrow card -->
+          <div class="card" style="height: 350px; width: 300px">
+            <img 
+              style="height: 100%; width: 100%" 
+              src="static/download (1).jpg" 
+              alt="..."/>
+          </div>
+          <div class="card" style="height: 350px; width: 300px">
+            <img
+              style="height: 100%; width: 100%"
+              src="static/download (3).jpg"
+              alt="..."
+            />
+          </div>
+          <div class="card" style="height: 350px; width: 300px">
+            <img
+              style="height: 100%; width: 100%"
+              src="static/download (4).jpg"
+              alt="..."
+            />
+          </div>
+          <div class="card" style="height: 350px; width: 300px">
+            <img
+              style="height: 100%; width: 100%"
+              src="static/download (6).jpg"
+              alt="..."
+            />
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card-wrapper container-sm d-flex justify-content-around">
+          <div class="card" style="height: 350px; width: 300px">
+            <img
+              style="height: 100%; width: 100%"
+              src="static/download (5).jpg"
+              alt="..."
+            />
+          </div>
+          <div class="card" style="height: 350px; width: 300px">
+            <img
+              style="height: 100%; width: 100%"
+              src="static/download (6).jpg"
+              alt="..."
+            />
+          </div>
+          <div class="card" style="height: 350px; width: 300px">
+            <img
+              style="height: 100%; width: 100%"
+              src="static/download (6).jpg"
+              alt="..."
+            />
+          </div>
+          <div class="card" style="height: 350px; width: 300px">
+            <img
+              style="height: 100%; width: 100%"
+              src="static/download.jpg"
+              alt="..."
+            />
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card-wrapper container-sm d-flex justify-content-around">
+          <div class="card" style="height: 350px; width: 300px">
+            <img
+              style="height: 100%; width: 100%"
+              src="static/Blockchain.jpg"
+              alt="..."
+            />
+          </div>
+          <div class="card" style="height: 350px; width: 300px">
+            <img
+              style="height: 100%; width: 100%"
+              src="static/doctor.jpg"
+              alt="..."
+            />
+          </div>
+          <div class="card" style="height: 350px; width: 300px">
+            <img
+              style="height: 100%; width: 100%"
+              src="static/download (4).jpg"
+              alt="..."
+            />
+          </div>
+          <div class="card" style="height: 350px; width: 300px">
+            <img
+              style="height: 100%; width: 100%"
+              src="static/doctor.jpg"
+              alt="..."
+            />
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- 11. Our Expart teacher -->
+
+<div class="align-content-center" style="background-color: rgb(167, 149, 149); padding:100px align-content-center ">
+  <div style=" text-align: center; padding-bottom:50px; padding-top:100px">
+    <h1>Our Expart Teachers</h1>
+    <h5 style="padding-left: 100px; padding-right:100px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus 
+      debitis ut omnis aspernatur atque quos officiis facere unde tempore rerum!</h5>
+  </div>
+  <div class="d-flex flex-wrap align-content-center justify-content-center " style="padding: 100px;"  >
+    <div style="padding: 30px;">
+      <div class="card col-4" style="height:400px; width:300px;  border-radius: 15px;">
+        <img src="{% static 'Blockchain.jpg' %}" style="width: 100%;  height: 100%;  border-radius: 15px;" alt="">
+      </div>
+    </div>
+    <div style="padding: 30px;">
+      <div class="card col-4" style="height:400px; width:300px;  border-radius: 15px;">
+        <img src="{% static 'doctor.jpg' %}" style="width: 100%;  height: 100%;  border-radius: 15px;" alt="">
+      </div>
+    </div>
+    <div style="padding: 30px;">
+      <div class="card col-4" style="height:400px; width:300px; border-radius: 15px;">
+        <img src="{% static 'download (1).jpg' %}" style="width: 100%;  height: 100%;  border-radius: 15px;" alt="">
+      </div>
+    </div>
+    <div style="padding: 30px;">
+      <div class="card col-4" style="height:400px; width:300px;  border-radius: 15px; ">
+        <img src="{% static 'download (3).jpg' %}" style="width: 100%;  height: 100%;  border-radius: 15px;" alt="">
+      </div>
+    </div>
+    <div style="padding: 30px;">
+      <div class="card col-4" style="height:400px; width:300px; border-radius: 15px;">
+        <img src="{% static 'download (4).jpg' %}" style="width: 100%;  height: 100%;  border-radius: 15px;" alt="">
+      </div>
+    </div>
+    <div style="padding: 30px;">
+      <div class="card col-4" style="height:400px; width:300px; border-radius: 15px;">
+        <img src="{% static 'download (4).jpg' %}" style="width: 100%;  height: 100%; border-radius: 15px;" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- 12 Student Opinion -->
+
+
+
+
+
+<!-- 7. join free seminer -->
+
+<style>
+  .joinseminerpart {
+    background-color: aqua;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bg-secondary {
+    padding-left: 150px;
+  }
+</style>
+
+{% endblock blockname %}
